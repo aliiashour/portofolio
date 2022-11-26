@@ -1,0 +1,48 @@
+/*    Start Tool Box   */
+.tool{
+    width: 260px ;
+    height: 100% ;
+    background-color: black; 
+    color: #FFF ; 
+    margin-left: -260px ; 
+    padding: 0px 20px 0px;
+    position: fixed;
+    top: 0px ; left: 0px ; 
+    z-index: 10000 ;
+    .open{
+        background-color: #000;
+        cursor: pointer ;
+        padding: 3px;
+        border-radius: 0px 15px 15px 0px;
+        position: absolute;
+        top: 80px; right: -26px;
+        &:hover i{
+            color: #d8b5b5 ;
+        }
+    }
+
+    h3{
+        padding-right: 15px ; 
+        cursor: pointer ;
+        text-align: right ;
+        &:hover span{
+            color: #d8b5b5 ;
+        }
+    }
+    ul{
+        margin: 0px ; 
+        margin-top: 50px ; 
+        text-align: center ; 
+        li{
+            display: inline-block ;
+            width: 35px ;
+            height: 35px ; 
+            margin-bottom: 10px ;
+            cursor: pointer ; 
+        }
+        li:not(:last-child){
+           margin-right: 5px ;
+        }
+    }
+}
+/*    End Tool Box   */

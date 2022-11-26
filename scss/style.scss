@@ -1,0 +1,106 @@
+/*    Start Global    */
+
+*{
+    padding: 0px ; 
+    margin: 0px;  
+    box-sizing: border-box ; 
+}
+$fontSize : 16px ; 
+@mixin animation($val){
+    -webkit-animation:$val ; 
+    -moz-animation:$val ; 
+    animation:$val ; 
+}
+@mixin transform($val){
+    -webkit-transform:$val ; 
+    -moz-transform:$val ; 
+    transform:$val ; 
+}
+@mixin transition($val){
+    -webkit-transition:$val ; 
+    -moz-transition:$val ; 
+    transition:$val ; 
+}
+@mixin background-size($val){
+    -webkit-background-size: $val; 
+    -moz-background-size: $val; 
+    background-size: $val; 
+}
+@mixin box-shadow($val){
+    -webkit-box-shadow: $val; 
+    -moz-box-shadow: $val;  
+    box-shadow: $val; 
+}
+/*    End Global    */
+
+/*    Start Loading    */
+.load{
+    width: 100% ; 
+    height: 100% ; 
+    background-color: #000 ; 
+    color: #FFF ;
+    position: fixed ;
+    top: 0; left: 0 ; 
+    z-index: 555555 ; 
+    .spiner{
+        width: 160px ; 
+        height: 160px ; 
+        background: none; 
+        border: 4px solid #5f5656 ; 
+        border-right-color: #FFF ; 
+        border-radius: 50% ; 
+        margin: 250px auto 0px;
+        @include animation(spin 1.5s linear infinite) ; 
+    }
+    h2{
+        margin-top: 20px ;
+        margin-left: 70px;
+        font-size: $fontSize + 54;
+        letter-spacing: 5px;
+    }
+}
+@keyframes spin{
+    0% {
+        @include transform( rotate(0deg) ) ; 
+    }
+    100% {
+        @include transform( rotate(360deg) ) ;
+    }
+}
+/*    End Loading    */
+
+/*    Start Scroll    */
+.scrolltop{ 
+    display: none ; 
+    padding: 15px ; 
+    cursor: pointer ;
+    border-radius: 50% ; 
+    position: fixed ; 
+    right: 30px ;bottom: 30px ; 
+    z-index: 99999 ;
+    i{
+        color: #FFF ;
+    }
+}
+/*    End Scroll    */
+/*    Start Tool Box   */
+@import "tool" ; 
+/*    End Tool Box   */
+/*    Start Header   */
+@import "header" ; 
+/*    Start FandC   */
+@import "FandC" ; 
+/*    End FandC  */
+/*    Start WandP   */
+@import "WandP" ; 
+/*    End WandP  */
+
+/*    Start PCSC   */
+@import "PCSC" ; 
+/*    End PCSC  */
+/*    Start Footer   */
+@import "footer" ; 
+/*    End Footer  */
+/*    Start Media   */
+@import "media" ; 
+/*    End Media  */

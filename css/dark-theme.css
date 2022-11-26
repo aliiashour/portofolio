@@ -1,0 +1,47 @@
+/*  backgrounds    */
+
+.navbar-light .navbar-nav .nav-item::after,
+.slider .carousel-indicators li:hover,
+.choose .row > div:last-child,
+.price .price-item h3:hover,
+.features .row > div:hover,
+.stat .row > div:hover,
+.work ul li:hover,
+.work .active,
+.uppernav,
+.contact a,
+.scrolltop,
+.end{
+    background-color:#34495e;
+}
+
+/*    coloers    */
+
+.navbar-light .navbar-nav .active>.nav-link,
+.slider .carousel-indicators li:hover,
+footer .row div:first-child .logo,
+.posts .row .card .card-body h5,
+.carousel-inner h2 span,
+.features .row > div h3,
+.price .price-item h4,
+.navbar .logo,
+.company h2,
+.tool h2,
+.posts h2,
+.price h2,
+footer h2,
+.work h2,
+.stat p{
+    color: #34495e;
+}
+
+.features .row > div:hover i{
+    background-color: #FFF ; 
+}
+.posts .row .card .card-body,
+.work ul li{
+    border: 1px solid #34495e  ;
+}
+.posts .row .card .card-body{
+    border-top: none ; 
+}

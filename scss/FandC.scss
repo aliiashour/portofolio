@@ -1,0 +1,70 @@
+/*Start features*/
+.features{
+    .row{
+        div{
+            padding-top: 50px ;
+            padding-bottom: 50px ;
+            h3{
+                font-weight: 700;
+                margin-top: 12px;
+                margin-bottom: 0px; 
+            }
+            p{
+                font-size: $fontSize;
+                font-weight: 300;
+                color: #bbb1b1;
+            }
+            &:hover > h3{
+                color: #FFF ;    
+            }
+        }
+    }
+    i{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 100px;
+    }
+}
+
+/*End features*/
+
+/*Start Company*/
+.company{
+    padding: 40px 0px; 
+    background-color: #f0f5f7; 
+    h2{
+        font-size: 60px;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+    div{
+        margin: 0px auto;
+        color: #948c8c;
+        line-height: 1.4;
+        text-align: center;
+    } 
+    div:last-child{ 
+        display: flex ; 
+        margin-top: 20px;
+        justify-content: center ;
+    }
+}
+
+.company div:last-child{
+    margin-top: 20px;
+    justify-content: center ; 
+    display: flex ; 
+}
+.company div:last-child span{
+    background-color: red;
+    display: block;
+    width: 100px;
+    padding: 12px 6px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #FFF;
+}
+/*End Company*/
